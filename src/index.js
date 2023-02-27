@@ -1,3 +1,9 @@
 module.exports = function reverse (n) {
-  return parseFloat(num.toString().split('').reverse().join('')) * Math.sign(num);
+  let reversed = 0; 
+      while (num !== 0) {
+      let oxirgiRaqam = num % 10; 
+      reversed = (reversed * 10) + oxirgiRaqam; 
+      num = (num - oxirgiRaqam) / 10; 
+    }
+    return reversed;
 }
