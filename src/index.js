@@ -1,9 +1,8 @@
-function reverse (n) {
-  let reversed = 0; 
-      while (num !== 0) {
-      let oxirgiRaqam = num % 10; 
-      reversed = (reversed * 10) + oxirgiRaqam; 
-      num = (num - oxirgiRaqam) / 10; 
-    }
-    return reversed;
+module.exports = function reverse (n) {
+  let numStr = Math.abs(n).toString();
+  let result = "";
+  for (i = numStr.length-1; i >= 0; i--){
+    result += numStr.substring(i, i+1);
+  }
+  return +result;
 }
