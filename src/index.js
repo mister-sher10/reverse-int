@@ -1,4 +1,4 @@
-module.exports = function reverse (n) {
+function reverse (n) {
   let reversed = 0; 
       while (num !== 0) {
       let oxirgiRaqam = num % 10; 
